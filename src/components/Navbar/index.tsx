@@ -9,7 +9,7 @@ import {
 const Navbar: FC = () => {
   const icon_style: string = "cursor-pointer text-[20px]";
   return (
-    <div className="w-[80%] m-auto flex justify-between items-center h-[90px]">
+    <div className="w-[80%] m-auto flex justify-between items-center h-[90px] border-b border-[#46A358]">
       <div>
         <img />
         <h3>logo</h3>
@@ -22,7 +22,7 @@ const Navbar: FC = () => {
         <SearchOutlined className={`${icon_style}`} />
         <BellOutlined className={`${icon_style}`} />
         <ShoppingCartOutlined className={`${icon_style}`} />
-        <button className="text-white w-[100px] h-[35px] bg-[#46A358] flex justify-center items-center gap-2">
+        <button className="text-white w-[100px] h-[35px] bg-[#46A358] flex justify-center items-center gap-2 rounded-md">
           <LoginOutlined />
           Login
         </button>
