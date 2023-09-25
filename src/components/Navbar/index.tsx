@@ -4,12 +4,15 @@ import {
   SearchOutlined,
   ShoppingCartOutlined,
   BellOutlined,
+  MenuOutlined,
 } from "@ant-design/icons";
+import SiteMap from "./Sitemap";
 
 const Navbar: FC = () => {
   const icon_style: string = "cursor-pointer text-[20px]";
   return (
     <div className="w-[80%] m-auto flex justify-between items-center h-[90px] border-b border-[#46A358]">
+      <SiteMap />
       <div>
         <img />
         <h3>logo</h3>
@@ -22,10 +25,11 @@ const Navbar: FC = () => {
         <SearchOutlined className={`${icon_style}`} />
         <BellOutlined className={`${icon_style}`} />
         <ShoppingCartOutlined className={`${icon_style}`} />
-        <button className="text-white w-[100px] h-[35px] bg-[#46A358] flex justify-center items-center gap-2 rounded-md">
+        <button className="text-white w-[100px] h-[35px] bg-[#46A358] flex justify-center items-center gap-2 rounded-md max-md:hidden">
           <LoginOutlined />
           Login
         </button>
+        <MenuOutlined className={`${icon_style} hidden max-md:flex`} />
       </div>
     </div>
   );
