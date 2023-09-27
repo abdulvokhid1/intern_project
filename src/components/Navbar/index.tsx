@@ -17,7 +17,7 @@ const Navbar: FC = () => {
         <img />
         <h3>logo</h3>
       </div>
-      <div className="flex gap-4">
+      <div className="flex gap-4 max-md:hidden">
         <h3 className="cursor-pointer">Home</h3>
         <h3 className="cursor-pointer">Blog</h3>
       </div>
@@ -25,7 +25,7 @@ const Navbar: FC = () => {
         <SearchOutlined className={`${icon_style}`} />
         <BellOutlined className={`${icon_style}`} />
         <ShoppingCartOutlined className={`${icon_style}`} />
-        <button className="text-white w-[100px] h-[35px] bg-[#46A358] flex justify-center items-center gap-2 rounded-md max-md:hidden">
+        <button className="text-white w-[100px] h-[35px] bg-[#46A358] flex rounded-md items-center gap-2 rounded-md max-md:hidden">
           <LoginOutlined />
           Login
         </button>
