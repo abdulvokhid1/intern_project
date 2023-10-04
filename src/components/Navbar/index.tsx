@@ -14,8 +14,7 @@ const Navbar: FC = () => {
     <div className="w-[80%] m-auto flex justify-between items-center h-[90px] border-b border-[#46A358]">
       <SiteMap />
       <div>
-        <img />
-        <h3>logo</h3>
+        <img src="https://firebasestorage.googleapis.com/v0/b/aema-image-upload.appspot.com/o/greenshop%2Ficons%2Flogo.svg?alt=media&token=fc9659d6-f435-43b9-a624-8b0d3a574baa" />
       </div>
       <div className="flex gap-4 max-md:hidden">
         <h3 className="cursor-pointer">Home</h3>
