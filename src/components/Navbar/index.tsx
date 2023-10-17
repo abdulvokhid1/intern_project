@@ -7,8 +7,11 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 import SiteMap from "./Sitemap";
+import { useReduxDispatch } from "../../hooks/useRedux";
+import { setSiteMapModalVisibility } from "../../redux/modalSlice";
 
 const Navbar: FC = () => {
+  const dispatch = useReduxDispatch();
   const icon_style: string = "cursor-pointer text-[20px]";
   return (
     <div className="w-[80%] m-auto flex justify-between items-center h-[90px] border-b border-[#46A358]">
@@ -28,7 +31,10 @@ const Navbar: FC = () => {
           <LoginOutlined />
           Login
         </button>
-        <MenuOutlined className={`${icon_style} hidden max-md:flex`} />
+        <MenuOutlined
+          onClick={() => dispatch(setSiteMapModalVisibility())}
+          className={`${icon_style} hidden max-md:flex`}
+        />
       </div>
     </div>
   );
