@@ -6,3 +6,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.slick-dots li button {
+  background-color: #46a358 !important;
+  opacity: 30%;
+}
+.slick-dots button {
+  background-color: #46a358 !important;
+}

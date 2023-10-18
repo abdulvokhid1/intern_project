@@ -14,7 +14,7 @@ const Navbar: FC = () => {
   const dispatch = useReduxDispatch();
   const icon_style: string = "cursor-pointer text-[20px]";
   return (
-    <div className="w-[80%] m-auto flex justify-between items-center h-[90px] border-b border-[#46A358]">
+    <div className=" m-auto flex justify-between items-center h-[90px] border-b border-[#46A358]">
       <SiteMap />
       <div>
         <img src="https://firebasestorage.googleapis.com/v0/b/aema-image-upload.appspot.com/o/greenshop%2Ficons%2Flogo.svg?alt=media&token=fc9659d6-f435-43b9-a624-8b0d3a574baa" />
@@ -27,7 +27,7 @@ const Navbar: FC = () => {
         <SearchOutlined className={`${icon_style}`} />
         <BellOutlined className={`${icon_style}`} />
         <ShoppingCartOutlined className={`${icon_style}`} />
-        <button className="text-white w-[100px] h-[35px] bg-[#46A358] flex rounded-md items-center gap-2 rounded-md max-md:hidden">
+        <button className="text-white w-[100px] h-[35px] bg-[#46A358] flex rounded-md justify-center items-center gap-2 rounded-md max-md:hidden">
           <LoginOutlined />
           Login
         </button>
